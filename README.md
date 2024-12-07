@@ -22,7 +22,6 @@ MONGO_URL=mongodb://localhost:27017/uzum-integration
 UZUM_USERNAME=
 UZUM_PASSWORD=
 UZUM_SERVICE_ID=
-
 ```
 
 <p>3. Start the app</p>
