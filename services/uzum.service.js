@@ -113,7 +113,7 @@ class UzumService {
 			throw new BaseError.BadRequest(this.createErrorResponse(serviceId, 'TransactionNotFound'))
 		}
 
-		transaction.state = TransactionState.Cancelled
+		transaction.state = TransactionState.PaidCanceled
 		transaction.cancel_time = new Date()
 		await transaction.save()
 
