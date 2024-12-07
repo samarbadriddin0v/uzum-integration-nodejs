@@ -4,10 +4,10 @@ const uzumController = require('../controllers/uzum.controller')
 
 const router = new Router()
 
-router.post('/check', uzumController.check)
-router.post('/create', uzumController.create)
-router.post('/confirm', uzumController.confirm)
-router.post('/reverse', uzumController.reverse)
-router.post('/status', uzumController.status)
+router.post('/check', uzumCheckToken, uzumController.check)
+router.post('/create', uzumCheckToken, uzumController.create)
+router.post('/confirm', uzumCheckToken, uzumController.confirm)
+router.post('/reverse', uzumCheckToken, uzumController.reverse)
+router.post('/status', uzumCheckToken, uzumController.status)
 
 module.exports = router
